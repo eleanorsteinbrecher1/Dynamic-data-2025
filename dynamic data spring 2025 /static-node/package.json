@@ -1,0 +1,11 @@
+{
+  "name": "not-static-node",
+  "version": "1.0.0",
+  "description": "serving static files examples",
+  "main": "static.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "elli",
+  "license": "MIT"
+}
