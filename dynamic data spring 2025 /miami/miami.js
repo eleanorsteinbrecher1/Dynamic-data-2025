@@ -1,25 +1,37 @@
 const express = require('express');
 const app = express();
+
+const expressHandlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
+const handler = require('./lib/handler');
+
+app.engine('handlebars', expressHandlebars.engine());
+app.set('view engine', 'handlebars');
+
+const port = process.env.port || 3000;
+const navigation = require('./data/navigation.json');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const handler = require('./lib/handler');
+app.get('/newsletter-signup', handler.newsletterSignup)
+app.post('/newsletter-signup/process', handler. newsletterSignupProcess)
+app.get('/newsletter/list', handler.newsletterSignupList)
+
+app.get('/newsletter/details/:email',handler.newsletterUser)
+
+app.get('/newsletter/delete/:email',handler.newsletterUserDelete)
 
 
-const handlebars = require('express-handlebars');
-app.engine('handlebars', handlebars.engine());
-app.set('view engine', 'handlebars');
-
-const port = process.env.port || 3000 
-const navigation = require('./data/navigation.json'); 
 
 
+app.get('/newsletter/thankyou',(req,res) =>{
+    res.render('thankyou')
+ })
+ 
 app.get('/', (request, response) => {
     response.type("text/html");
     response.render("home", { title: "Miami Travel Site", navigation });
 });
-
 
 app.get('/beaches', (request, response) => {
     response.type("text/html");
@@ -47,13 +59,6 @@ app.use((request, response) => {
     response.status(404);
     response.send("404 not found");
 });
-
-app.get('/basic',(req,res)=>{
-    res.render('page',{req})
- })
- 
- app.get('/newsletter-signup', handler.newsletterSignup)
- app.post('/newsletter-signup/process', handler.newsletterSignup)
 
 app.use((error, request, response, next) => {
     console.error("Error:", error);
