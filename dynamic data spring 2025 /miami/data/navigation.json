@@ -1,33 +1,35 @@
 {
     "brand": {
         "name": "Miami Travel Site",
-        "link": "/",
-        "img": "/images/logo.png"
+        "href": "/",
+        "img":"/images/logo.png"
     },
-    "links": [
-        {
-            "text": "Home",
-            "href": "/"
-        },
-        {
-            "text": "Beaches",
-            "href": "/beaches"
-        },
-        {
-            "text": "Nightlife",
-            "href": "/nightlife"
-        },
-        {
-            "text": "About",
-            "href": "/about"
-        },
-        {
-            "text": "Newsletter Signup",
-            "href": "/newsletter-signup"
-        },
-        {
-            "text": "Newsletter List",
-            "href": "/newsletter/list"
-        }
-    ]
+    
+"links": [
+    {
+        "text":"Home",
+        "href":"/"
+    },
+    {
+        "text":"Nightlife",
+        "href":"/nightlife"
+    },
+    {
+        "text":"Beaches",
+        "href":"/beaches"
+    },
+    {
+        "text":"About",
+        "href":"/about"
+    },
+    {
+        "href":"/newsletter-signup",
+        "text":"News Letter Signup"
+    },
+    {
+        "href":"/newsletter/list",
+        "text":"Newsletter List"
+    }
+
+]
 }
