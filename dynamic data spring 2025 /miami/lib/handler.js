@@ -66,6 +66,8 @@ exports.newsletterSignupProcess = (req,res) => {
 
     fs.writeFileSync('./data/emails.json',json,'utf-8',()=>{})
 
+    delete require.cache[require.resolve("../data/emails.json")];
+
     res.redirect(303,'/newsletter/list')
 
 
