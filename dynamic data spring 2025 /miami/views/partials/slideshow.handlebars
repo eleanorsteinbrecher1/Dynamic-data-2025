@@ -24,3 +24,25 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<div id="carousel" class="carousel slide">
+  <div class="carousel-inner">
+    {{!-- This will repeat from our slides array --}}
+    {{#each slides}}
+    <div class="carousel-item {{#if @first}}active{{/if}}">
+    <a href="/page/{{this.page}}">
+      <img src="{{this.url}}" class="d-block w-100" alt="...">
+    </a>
+    </div>
+    {{/each}}
+    
+  </div>
+  {{!-- These are the controls.. DO NOT TOUCH --}}
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

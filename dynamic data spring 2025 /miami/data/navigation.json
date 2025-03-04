@@ -12,15 +12,15 @@
     },
     {
         "text":"Nightlife",
-        "href":"/nightlife"
+        "href":"/page/nightlife"
     },
     {
         "text":"Beaches",
-        "href":"/beaches"
+        "href":"/page/beaches"
     },
     {
         "text":"About",
-        "href":"/about"
+        "href":"/page/about"
     },
     {
         "href":"/newsletter-signup",

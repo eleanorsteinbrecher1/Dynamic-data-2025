@@ -1,7 +1,13 @@
-{{>slideshow}}
 
+{{!-- Include partial slideshow --}}
+{{>slideshow}}
 
 {{#if title}}
 <h1> {{title}} </h1>
 {{/if}}
 
+{{#if description}}
+<p> {{description}} </p>
+{{/if}}
+
+{{>destinations}}

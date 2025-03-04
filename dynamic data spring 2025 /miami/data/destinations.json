@@ -1,0 +1,52 @@
+{
+    "locations":[
+        {
+            "page":"nightlife",
+            "name":"Factory Town",
+            "description":"Magni delectus maxime ut eligendi mollitia quos porro accusamus, minus non consequuntur enim.",
+            "image":"/images/destinations/destination.jpg"
+        },
+        {
+            "page":"nightlife",
+            "name":"The Bar",
+            "description":"Magni delectus maxime ut eligendi mollitia quos porro accusamus, minus non consequuntur enim.",
+            "image":"/images/destinations/destination.jpg"
+        },
+        {
+            "page":"nightlife",
+            "name":"Titanic",
+            "description":"Magni delectus maxime ut eligendi mollitia quos porro accusamus, minus non consequuntur enim.",
+            "image":"/images/destinations/destination.jpg"
+        },
+        {
+            "page":"nightlife",
+            "name":"Bodega",
+            "description":"Magni delectus maxime ut eligendi mollitia quos porro accusamus, minus non consequuntur enim.",
+            "image":"/images/destinations/destination.jpg"
+        },
+        {
+            "page":"beaches",
+            "name":"South Beach",
+            "description":"Magni delectus maxime ut eligendi mollitia quos porro accusamus, minus non consequuntur enim.",
+            "image":"/images/destinations/destination.jpg"
+        },
+        {
+            "page":"beaches",
+            "name":"Crandon Park",
+            "description":"Magni delectus maxime ut eligendi mollitia quos porro accusamus, minus non consequuntur enim.",
+            "image":"/images/destinations/destination.jpg"
+        },
+        {
+            "page":"beaches",
+            "name":"Cape Florida",
+            "description":"Magni delectus maxime ut eligendi mollitia quos porro accusamus, minus non consequuntur enim.",
+            "image":"/images/destinations/destination.jpg"
+        },
+        {
+            "page":"beaches",
+            "name":"Hobie",
+            "description":"Magni delectus maxime ut eligendi mollitia quos porro accusamus, minus non consequuntur enim.",
+            "image":"/images/destinations/destination.jpg"
+        }
+    ]
+}
