@@ -1,0 +1,18 @@
+[
+    { "name": "Bali", "image": "/images/bali1.jpg" },
+    { "name": "Paris", "image": "/images/paris1.jpg" },
+    { "name": "Tokyo", "image": "/images/tokyo1.jpg" },
+    { "name": "Rome", "image": "/images/rome1.jpg" },
+    { "name": "Bali", "image": "/images/bali2.jpg" },
+    { "name": "Paris", "image": "/images/paris2.jpg" },
+    { "name": "Tokyo", "image": "/images/tokyo2.jpg" },
+    { "name": "Rome", "image": "/images/rome2.jpg" },
+    { "name": "Bali", "image": "/images/bali3.jpg" },
+    { "name": "Paris", "image": "/images/paris3.jpg" },
+    { "name": "Tokyo", "image": "/images/tokyo3.jpg" },
+    { "name": "Rome", "image": "/images/rome3.jpg" },
+    { "name": "Bali", "image": "/images/bali4.jpg" },
+    { "name": "Paris", "image": "/images/paris4.jpg" },
+    { "name": "Tokyo", "image": "/images/tokyo4.jpg" },
+    { "name": "Rome", "image": "/images/rome4.jpg" }
+]

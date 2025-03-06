@@ -1,0 +1,57 @@
+<section class="hero">
+    <div class="slider-container">
+        <div class="slider">
+            {{#each gallery}}
+                <div class="slide" style="background-image: url('{{this.image}}');"></div>
+            {{/each}}
+        </div>
+    </div>
+    <h1>DISCOVER YOUR NEXT ADVENTURE</h1>
+</section>
+
+<div class="content-grid">
+    <div class="text-box">
+        <h2>About Us</h2>
+        <p>We help travelers explore breathtaking locations with ease and comfort. Our team curates unique experiences worldwide, offering personalized travel packages to make your journey unforgettable.</p>
+    </div>
+
+    <div class="text-box">
+        <h2>Our Services</h2>
+        <ul>
+            <li>✈️ Custom Travel Packages</li>
+            <li>🏨 Luxury Accommodations</li>
+            <li>🗺️ Local Tour Guides</li>
+            <li>📞 24/7 Travel Assistance</li>
+        </ul>
+    </div>
+</div>
+
+<section class="destination-gallery">
+    <h2>Explore Beautiful Destinations</h2>
+    <div class="destination-grid">
+        <div class="destination-card" style="background-image: url('/images/bali1.jpg');">
+            <div class="destination-info">
+                <h3>Bali</h3>
+                <p>From stunning rice terraces to white-sand beaches, Bali is a paradise for relaxation and adventure.</p>
+            </div>
+        </div>
+        <div class="destination-card" style="background-image: url('/images/paris1.jpg');">
+            <div class="destination-info">
+                <h3>Paris</h3>
+                <p>The City of Love, known for its art, fashion, and iconic landmarks like the Eiffel Tower.</p>
+            </div>
+        </div>
+        <div class="destination-card" style="background-image: url('/images/tokyo1.jpg');">
+            <div class="destination-info">
+                <h3>Tokyo</h3>
+                <p>A vibrant city blending futuristic skyscrapers with ancient temples and rich traditions.</p>
+            </div>
+        </div>
+        <div class="destination-card" style="background-image: url('/images/rome1.jpg');">
+            <div class="destination-info">
+                <h3>Rome</h3>
+                <p>The Eternal City, where history and culture blend seamlessly with modern charm.</p>
+            </div>
+        </div>
+    </div>
+</section>

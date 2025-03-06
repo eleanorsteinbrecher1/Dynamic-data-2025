@@ -1,0 +1,40 @@
+<section class="hero">
+    <h1>{{destination}}</h1>
+</section>
+
+<div class="content-grid">
+    <div class="text-box">
+        <h2>About {{destination}}</h2>
+        <p>{{about}}</p>
+    </div>
+
+    <div class="text-box">
+        <h2>Our Services in {{destination}}</h2>
+        <ul>
+            {{#each services}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+<section class="destination-grid">
+    <h2>Top Destinations in {{destination}}</h2>
+    <ul>
+        {{#each destinations}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+</section>
+
+<section class="gallery">
+    <h2>Gallery - {{destination}}</h2>
+    <div class="gallery-grid">
+        {{#each gallery}}
+            <div class="gallery-item">
+                <img src="{{this.image}}" alt="{{this.name}}">
+                <div class="image-info">{{this.name}}</div>
+            </div>
+        {{/each}}
+    </div>
+</section>
