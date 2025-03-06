@@ -18,8 +18,15 @@
     </div>
 </div>
 
+<!-- New Informational Section -->
+<section class="text-box">
+    <h2>Interesting Facts About {{destination}}</h2>
+    <p>{{facts}}</p>
+</section>
+
+<!-- Top Destinations -->
 <section class="destination-grid">
-    <h2>Top Destinations in {{destination}}</h2>
+    <h2>Top Places to Visit in {{destination}}</h2>
     <ul>
         {{#each destinations}}
             <li>{{this}}</li>
@@ -27,6 +34,7 @@
     </ul>
 </section>
 
+<!-- Expanded Gallery Section -->
 <section class="gallery">
     <h2>Gallery - {{destination}}</h2>
     <div class="gallery-grid">

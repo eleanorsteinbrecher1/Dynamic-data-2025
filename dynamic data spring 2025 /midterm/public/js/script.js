@@ -4,16 +4,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
-            slide.classList.remove("active");
-            if (i === index) slide.classList.add("active");
+            slide.style.opacity = i === index ? "1" : "0";
         });
     }
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
+    function changeSlide(direction) {
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = slides.length - 1;
+        } else if (currentIndex >= slides.length) {
+            currentIndex = 0;
+        }
         showSlide(currentIndex);
     }
 
     showSlide(currentIndex);
-    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    setInterval(() => changeSlide(1), 5000); // Auto change every 5 seconds
 });

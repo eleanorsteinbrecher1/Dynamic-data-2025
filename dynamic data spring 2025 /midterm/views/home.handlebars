@@ -1,10 +1,12 @@
 <section class="hero">
     <div class="slider-container">
         <div class="slider">
-            {{#each gallery}}
+            {{#each sliderImages}}
                 <div class="slide" style="background-image: url('{{this.image}}');"></div>
             {{/each}}
         </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
     </div>
     <h1>DISCOVER YOUR NEXT ADVENTURE</h1>
 </section>
@@ -26,32 +28,35 @@
     </div>
 </div>
 
+<!-- Fixed Destination Cards -->
 <section class="destination-gallery">
     <h2>Explore Beautiful Destinations</h2>
     <div class="destination-grid">
-        <div class="destination-card" style="background-image: url('/images/bali1.jpg');">
-            <div class="destination-info">
-                <h3>Bali</h3>
-                <p>From stunning rice terraces to white-sand beaches, Bali is a paradise for relaxation and adventure.</p>
-            </div>
-        </div>
-        <div class="destination-card" style="background-image: url('/images/paris1.jpg');">
-            <div class="destination-info">
-                <h3>Paris</h3>
-                <p>The City of Love, known for its art, fashion, and iconic landmarks like the Eiffel Tower.</p>
-            </div>
-        </div>
-        <div class="destination-card" style="background-image: url('/images/tokyo1.jpg');">
-            <div class="destination-info">
-                <h3>Tokyo</h3>
-                <p>A vibrant city blending futuristic skyscrapers with ancient temples and rich traditions.</p>
-            </div>
-        </div>
-        <div class="destination-card" style="background-image: url('/images/rome1.jpg');">
-            <div class="destination-info">
-                <h3>Rome</h3>
-                <p>The Eternal City, where history and culture blend seamlessly with modern charm.</p>
-            </div>
-        </div>
+        <a href="/destination/bali" class="destination-card" style="background-image: url('/images/bali1.jpg');">
+            <div class="destination-info"><h3>Bali</h3></div>
+        </a>
+        <a href="/destination/paris" class="destination-card" style="background-image: url('/images/paris1.jpg');">
+            <div class="destination-info"><h3>Paris</h3></div>
+        </a>
+        <a href="/destination/tokyo" class="destination-card" style="background-image: url('/images/tokyo1.jpg');">
+            <div class="destination-info"><h3>Tokyo</h3></div>
+        </a>
+        <a href="/destination/rome" class="destination-card" style="background-image: url('/images/rome1.jpg');">
+            <div class="destination-info"><h3>Rome</h3></div>
+        </a>
     </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-section">
+    <h2>Contact Me</h2>
+    <form action="/submit-contact" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Submit</button>
+    </form>
 </section>
