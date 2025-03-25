@@ -47,6 +47,21 @@
     </div>
 </section>
 
+<!-- Full Gallery Section -->
+<section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        {{#each fullGallery}}
+            {{#unless (includes this.image sliderImages)}}
+                <div class="gallery-item">
+                    <img src="{{this.image}}" alt="{{this.name}}">
+                    <div class="image-info">{{this.name}}</div>
+                </div>
+            {{/unless}}
+        {{/each}}
+    </div>
+</section>
+
 <!-- Contact Form -->
 <section class="contact-section">
     <h2>Contact Me</h2>

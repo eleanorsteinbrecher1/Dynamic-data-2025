@@ -64,6 +64,16 @@ nav {
     margin: 20px 0;
 }
 
+/* Standardized Gallery & Destination Image Sizes */
+.gallery-item img,
+.destination-card {
+    width: 250px; /* Consistent width */
+    height: 250px; /* Consistent height */
+    object-fit: cover; /* Prevent stretching */
+    border-radius: 10px;
+    display: block;
+}
+
 /* Gallery Grid - Displays 16 Images */
 .gallery-grid {
     display: grid;
@@ -71,29 +81,6 @@ nav {
     gap: 15px;
     padding: 50px;
     justify-items: center;
-}
-
-/* Standardize all images (except slider images) */
-.gallery-item img,
-.destination-card {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-}
-
-/* Gallery Image Styling */
-.gallery-item {
-    width: 250px;
-    height: 250px;
-    position: relative;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 /* Destination Grid - Aligns Destination Cards */

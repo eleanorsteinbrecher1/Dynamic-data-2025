@@ -1,13 +1,15 @@
 <section class="hero">
-    <h1>{{destination}}</h1>
+    <h1>Discover {{destination}}</h1>
 </section>
 
 <div class="content-grid">
+    <!-- About Section -->
     <div class="text-box">
         <h2>About {{destination}}</h2>
         <p>{{about}}</p>
     </div>
 
+    <!-- Services Section -->
     <div class="text-box">
         <h2>Our Services in {{destination}}</h2>
         <ul>
@@ -18,15 +20,15 @@
     </div>
 </div>
 
-<!-- New Informational Section -->
+<!-- Interesting Facts -->
 <section class="text-box">
     <h2>Interesting Facts About {{destination}}</h2>
     <p>{{facts}}</p>
 </section>
 
-<!-- Top Destinations -->
+<!-- Popular Places to Visit -->
 <section class="destination-grid">
-    <h2>Top Places to Visit in {{destination}}</h2>
+    <h2>Must-Visit Places in {{destination}}</h2>
     <ul>
         {{#each destinations}}
             <li>{{this}}</li>
@@ -34,11 +36,23 @@
     </ul>
 </section>
 
-<!-- Expanded Gallery Section -->
+<!-- Destination-Specific Image Grid (Shows ALL 4 Images for the Destination) -->
+<section class="destination-gallery">
+    <h2>Explore {{destination}}</h2>
+    <div class="destination-grid">
+        {{#each destinationGallery}}
+            <div class="destination-card" style="background-image: url('{{this.image}}');">
+                <div class="destination-info">{{this.name}}</div>
+            </div>
+        {{/each}}
+    </div>
+</section>
+
+<!-- Full Gallery (Displays ALL 16 Images) -->
 <section class="gallery">
-    <h2>Gallery - {{destination}}</h2>
+    <h2>Gallery of {{destination}}</h2>
     <div class="gallery-grid">
-        {{#each gallery}}
+        {{#each fullGallery}}
             <div class="gallery-item">
                 <img src="{{this.image}}" alt="{{this.name}}">
                 <div class="image-info">{{this.name}}</div>
