@@ -1,0 +1,40 @@
+<h2>Edit Order #{{order.id}}</h2>
+<form action="/order/edit/{{order.id}}" method="post" class="row g-3">
+  <div class="col-md-4">
+    <label>Customer</label>
+    <select name="CustomerId" class="form-control">
+      {{#each customers}}
+        <option value="{{id}}" {{#if (eq id ../order.CustomerId)}}selected{{/if}}>{{firstName}} {{lastName}}</option>
+      {{/each}}
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label>Size</label>
+    <select name="size" class="form-control">
+      <option {{#if (eq order.size "S")}}selected{{/if}}>S</option>
+      <option {{#if (eq order.size "M")}}selected{{/if}}>M</option>
+      <option {{#if (eq order.size "L")}}selected{{/if}}>L</option>
+      <option {{#if (eq order.size "XL")}}selected{{/if}}>XL</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label>Toppings</label>
+    <input name="toppings" class="form-control" value="{{order.toppings}}">
+  </div>
+  <div class="col-md-3">
+    <label>Status</label>
+    <select name="status" class="form-control">
+      <option {{#if (eq order.status "New")}}selected{{/if}}>New</option>
+      <option {{#if (eq order.status "Processing")}}selected{{/if}}>Processing</option>
+      <option {{#if (eq order.status "Completed")}}selected{{/if}}>Completed</option>
+    </select>
+  </div>
+  <div class="col-12">
+    <label>Notes</label>
+    <textarea name="notes" class="form-control">{{order.notes}}</textarea>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary">Update Order</button>
+    <a href="/orders" class="btn btn-secondary ms-2">Cancel</a>
+  </div>
+</form>
